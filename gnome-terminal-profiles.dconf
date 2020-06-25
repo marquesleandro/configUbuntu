@@ -1,0 +1,13 @@
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(106,100,103)'
+visible-name='marquesleandro'
+palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(251,8,118)', 'rgb(205,205,0)', 'rgb(102,102,107)', 'rgb(205,0,205)', 'rgb(6,163,218)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(239,10,99)', 'rgb(243,252,19)', 'rgb(150,150,160)', 'rgb(252,6,144)', 'rgb(34,249,253)', 'rgb(255,255,255)']
+default-size-columns=100
+default-size-rows=30
+cursor-shape='ibeam'
+use-transparent-background=true
+use-theme-colors=false
+use-theme-transparency=false
+background-color='rgb(0,0,0)'
+background-transparency-percent=7
+audible-bell=false
