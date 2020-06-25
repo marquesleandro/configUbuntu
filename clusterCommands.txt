@@ -1,0 +1,59 @@
+1) instalar Miniconda
+
+wget https... Endereço do Miniconda(linux version download)
+sh Anaconda... Instalar após o download
+
+2) abrir o ambiente miniconda
+digitar no terminal: "source ~/.bashrc"
+
+OBS: Para sair do ambiente, basta digitar "conda deactivate" ou "source deactivate" (descontinuado)
+
+3) instalar as bibliotecas.
+
+Para instalar as bibliotecas tu vai usar o comando:
+
+conda install -c anaconda numpy
+conda install -c anaconda scipy
+conda install -c conda-forge matplotlib
+conda install -c conda-forge tqdm
+
+https://anaconda.org/anaconda/numpy
+https://anaconda.org/anaconda/scipy
+https://anaconda.org/conda-forge/matplotlib
+
+Em cima tem os links que mostram os comandos pra instalar essas bibliotecas. Caso vc queria instalar uma outra biblioteca, escreve na Google "conda install nome da biblioteca" daí tu vai ver como instalar
+
+4) Com as bibliotecas instaladas, tu vai criar o arquivo.yaml
+
+O arquivo .yaml deve ficar da seguinte forma:
+
+name: fem
+
+channels: 
+ - default
+ - conda-forge
+
+dependencies:
+ - python=2.7 ou 3.5
+ - numpy
+ - scipy
+ - matplotlib
+ - tqdm
+
+Qualquer coisa dá uma olhada no Google
+
+5) Depois disso tu vai usar o seguinte comando:
+
+conda env create -f arquivo.yaml
+
+6) A partir de agora o ambiente fem está criado. Pra fazer as simulações tu vai escrever o comando screen. Vamos lá:
+
+a) conda activate fem ou source activate fem (descontinuado)
+b) screen -S nomeSimulação (pra facilitar na hora de ver todas as screen)
+c) comandos para a simulação
+d) Ctrl + A e depois aperta D
+e) pode sair do ssh sem problemas ou gerar novas screen pra simulação
+
+Pra voltar a ver a janela tu faz os comandos:
+a) screen -r
+b) screen -r número da Simulação
