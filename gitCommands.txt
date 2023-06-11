@@ -9,6 +9,13 @@ git config --global user.name "marquesleandro"
 (Na ultima configuração do Taurus, fiz isso aqui direto dentro da pasta e deu certo de boa)
 
 --------------------------------------------------------------------------------------------------------------------------
+Autenticar token:
+1) Entrar em Settings >> Developer settings
+2) Em seguida, clicar em: Personal access tokens >> Tokens (classic)
+3) Feito isso, clicar em Generate new token
+4) Habilitar acessos e salvar. Esse token substitui a senha em todos os procedimentos do github
+
+--------------------------------------------------------------------------------------------------------------------------
 
 Enviar atualizações:
 1) git clone https://github.com/marquesleandro/pasta
@@ -18,7 +25,7 @@ Enviar atualizações:
 5) git commit -m "modification files"
 6) git push 
 (usar https://github.com/marquesleandro/pasta quando a pasta não for repositório remoto)
-8) colocar usuario e senha
+7) colocar usuario e o token (nao eh para colocar a senha, somente o token)
 
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -40,7 +47,7 @@ Remover arquivos:
 4) git commit -m "remove files"
 5) git push
 (usar https://github.com/marquesleandro/pasta quando a pasta não for repositório remoto)
-6) colocar usuario e senha
+6) colocar usuario e o token (nao eh para colocar a senha, somente o token)
 
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -51,7 +58,7 @@ Renomear arquivos:
 4) git commit -m "renome files"
 5) git push
 (usar https://github.com/marquesleandro/pasta quando a pasta não for repositório remoto)
-6) colocar usuario e senha
+6) colocar usuario e o token (nao eh para colocar a senha, somente o token)
 
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -68,7 +75,7 @@ Para salvar o usuario e senha:
 2) git commit -m "texto para modificações"
 3) git config credential.helper store
 4) git push
-5) colocar o usuario e senha normalmente
+5) colocar usuario e o token (nao eh para colocar a senha, somente o token)
 6) feito isso, nas proximas vezes a senha estará salva
 
 --------------------------------------------------------------------------------------------------------------------------
